@@ -65,10 +65,8 @@ export class CartService {
     let index = this.cartList.findIndex((element:any) => element.id == prod.id);
     this.cartList.splice(index, 1);
     this.calculateTotalAmount();
-    return index;
-    //this.getCartItems();
-    //this.getTotalAmount();
-    //this.getTotalItems();
+
+
   }
 
 }
