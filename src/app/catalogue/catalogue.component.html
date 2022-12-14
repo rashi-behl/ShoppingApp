@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let product of products">
+            <div class="col-md-3 card">
+                <img src={{product.image}} class="mt-1" alt="">
+                <h3>{{product.name}}</h3>
+                <h2>₹{{product.price}}</h2>
+
+                <button *ngIf="!product.itemInCart" class="btn btn-primary" (click)="addItemsToCart(product,'increment')" >Add To Cart</button>
+                <div *ngIf="product.itemInCart" class="quantity">
+                    <button class="btn btn-primary" (click)="decrementQuantity(product)">-</button>
+                    <h2>{{product.quantity}}</h2>
+                    <button class="btn btn-primary" (click)="incrementQuantity(product)">+</button>
+                </div>
+            </div>
+        
+        </ng-container>
+    </div>
+</div>

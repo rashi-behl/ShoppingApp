@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .box{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 7%;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 80vw;
+        h1{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+
+.containerCart{
+    margin: 2%;
+}
+
+.summary{
+    text-align: right;
+    border: 1px solid #4434343b;
+    border-radius: 3px;
+    padding: 1%;
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+.confirmOrder{
+    justify-content: right;
+    margin-top: 1%;
+    display: flex;
+}
